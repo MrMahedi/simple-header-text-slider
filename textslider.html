@@ -5,11 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Changing Text</title>
+    <style>
+        .changingText {
+            width: 100%;
+            min-height: 45px;
+            text-align: center;
+            color: #fff;
+            background-color: #5FA825;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .changingText {
+                line-height: 1rem;
+                font-size: 0.85rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <div id="changingText" style="width:100%;  text-align: center;color:#fff;background-color: #5FA825;"></div>
+    <div id="changingText" class="changingText"></div>
 
     <script>
         const textArray = ["Free Shipping Over Purchase $300", "Swift Dispatch, Timely Arrival: Your Golf Essentials En Route in 1 Day, at Your Door in 3-4 Days!"]; // Add your desired text here
