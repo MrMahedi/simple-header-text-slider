@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Text</title>
+</head>
+
+<body>
+
+    <div id="changingText" style="width:100%;  text-align: center;color:#fff;background-color: #5FA825;"></div>
+
+    <script>
+        const textArray = ["Free Shipping Over Purchase $300", "Swift Dispatch, Timely Arrival: Your Golf Essentials En Route in 1 Day, at Your Door in 3-4 Days!"]; // Add your desired text here
+        let index = 0;
+        const changingText = document.getElementById("changingText");
+
+        setInterval(() => {
+            index = (index + 1) % textArray.length;
+            changingText.textContent = textArray[index];
+        }, 2000);
+    </script>
+
+</body>
+
+</html>
